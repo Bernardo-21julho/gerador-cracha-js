@@ -13,14 +13,30 @@
 <body>
 
   <script>
-   let nome = prompt("Digite seu nome:");
-   let sobrenome = prompt("Digite seu sobrenome:");
-   let anonascimento = prompt("Digite seu ano de nascimento:");
+    let nome = prompt("Digite seu nome:");
+    let sobrenome = prompt("Digite seu sobrenome:");
+    let anonascimento = prompt("Digite seu ano de nascimento:");
 
-   let alunoativo = confirm("É aluno ativo da instituição?")
+    let alunoativo = confirm("É aluno ativo da instituição?");
+
+    anonascimento = Number(anonascimento);
+
+    let idade = 2026 - anonascimento;
+
+    let sobrenomeMaiusculo = sobrenome.toUpperCase();
+
+    let quantidadeCaracteres = nome.length;
+
+    console.log("Nome:", nome);
+    console.log("Sobrenome:", sobrenomeMaiusculo);
+    console.log("Ano de nascimento:", anonascimento);
+    console.log("Idade estimada:", idade);
+    console.log("Quantidade de caracteres do nome:", quantidadeCaracteres);
+    console.log("Aluno ativo:", alunoativo);
   </script>
 
 </body>
 
 </html>
+
 
